@@ -1,16 +1,46 @@
 public class Main {
     public static void main(String[] args) {
-        MyLinkedList<Integer> list = new MyLinkedList<>();
-        list.add(15);
-        list.add(20);
-        list.add(30);
+        MyArrayList<Integer> list = new MyArrayList<>();
+        MyLinkedList<String> list2 = new MyLinkedList<>();
 
-        list.addFirst(5);
-        System.out.println("Size: " + list.size());
-        System.out.println("Item at index 2: " + list.get(2));
-        System.out.println(list.get(0));
-        System.out.println(list.get(2));
-        list.remove(2);
-        System.out.println(list.get(2));
+        System.out.println("Actions with MyArrayList, MyLinkedList:");
+        list.add(88);
+        list.add(33);
+        list.add(15);
+        list.add(47);
+        list.add(30);
+        list.add(14);
+
+        list2.add("Alina");
+        list2.add("Bekovna");
+        list2.add("Berlin");
+        list2.add("Astana luchshyi");
+
+        for (int i = 0; i < list2.size(); i++) {
+            System.out.println(list2.get(i) + " ");
+        }
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + " ");
+        }
+
+        System.out.println("\n__________________\n\n");
+
+        list.sort();
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + " ");
+        }
+
+
+        System.out.println("\n\n\nActions with MyStack:");
+        MyStack<Integer> stack = new MyStack<>();
+
+        stack.push(88);
+        stack.push(33);
+        stack.push(15);
+
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+        System.out.println(stack.size());
+        System.out.println(stack.isEmpty());
     }
 }
