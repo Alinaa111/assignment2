@@ -53,5 +53,17 @@ public class Main {
         System.out.println(queue.size());
         System.out.println(queue.isEmpty());
 
+
+        System.out.println("\n\n\nActions with MyMinHeap:");
+        MyMinHeap<Integer> heap = new MyMinHeap<>();
+        heap.insert(99);
+        heap.insert(33);
+        heap.insert(65);
+        heap.insert(47);
+
+        System.out.println(heap.extractMin());
+        System.out.println(heap.peekMin());
+        System.out.println(heap.size());
+        System.out.println(heap.isEmpty());
     }
 }
