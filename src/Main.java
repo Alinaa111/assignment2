@@ -42,5 +42,16 @@ public class Main {
         System.out.println(stack.peek());
         System.out.println(stack.size());
         System.out.println(stack.isEmpty());
+
+        System.out.println("\n\n\nActions with MyQueue:");
+        MyQueue<String> queue = new MyQueue<>();
+        queue.enqueue("Alina");
+        queue.enqueue("Se-2405");
+        queue.enqueue("quizzes");
+
+        System.out.println(queue.peek());
+        System.out.println(queue.size());
+        System.out.println(queue.isEmpty());
+
     }
 }
